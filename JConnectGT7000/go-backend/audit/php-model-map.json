@@ -1,0 +1,942 @@
+[
+  {
+    "file": "frontend/application/models/Api_client_model.php",
+    "methods": [
+      "ready",
+      "listClients",
+      "nodeOptions",
+      "create",
+      "updateLimits",
+      "revoke",
+      "currentCounts",
+      "recentLogs"
+    ],
+    "verified_tables": [
+      "api_clients",
+      "api_request_counts",
+      "api_request_logs",
+      "site_nodes"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/models/Api_model.php",
+    "methods": [
+      "__construct",
+      "authApi",
+      "deviceLastLog",
+      "deviceLastLogData",
+      "GetDataById",
+      "insertRow",
+      "updateRow",
+      "delete",
+      "deleteData",
+      "deleteDevicetimer",
+      "findthistime",
+      "deleteTimer",
+      "upddataTimmerStatus",
+      "getapidata",
+      "getapikey",
+      "apifindkey",
+      "deleteApi",
+      "deleteDeviceapi",
+      "savelog",
+      "randomString",
+      "randomStringSize",
+      "authApiDevices",
+      "getLastTeley",
+      "updatetedata",
+      "checkkeyExists"
+    ],
+    "verified_tables": [
+      "devices"
+    ],
+    "unresolved_candidates": [
+      "api",
+      "d_entity",
+      "d_telemetry",
+      "logger",
+      "timer"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Config_backup_model.php",
+    "methods": [
+      "tables",
+      "exportPayload",
+      "restorePayload",
+      "replaceTable",
+      "upsertOnly",
+      "upsert",
+      "insertRow",
+      "hasPrimaryKey",
+      "deleteMissing",
+      "resetSequence",
+      "primaryKey",
+      "columns",
+      "jsonColumns"
+    ],
+    "verified_tables": [
+      "ia_users"
+    ],
+    "unresolved_candidates": [
+      "information_schema",
+      "pg_class",
+      "pg_constraint",
+      "pg_namespace"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Eventlogs_model.php",
+    "methods": [
+      "log_event"
+    ],
+    "verified_tables": [
+      "event_logs"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/models/Log2_model.php",
+    "methods": [
+      "__construct",
+      "authUser",
+      "user",
+      "remember_user",
+      "delete",
+      "mailVerify",
+      "ResetPpassword",
+      "getDataBy",
+      "checkExists",
+      "getUsers",
+      "getTemplate",
+      "insertRow",
+      "updateRow",
+      "get_list_box_data",
+      "getQrResult",
+      "getBarChartData",
+      "registrationMailVerify",
+      "getUserDevice",
+      "getDeviceAll",
+      "deleteDevice",
+      "salt",
+      "identity_check",
+      "login_remembered_user",
+      "set_session"
+    ],
+    "verified_tables": [
+      "devices",
+      "ia_email_templates",
+      "ia_users"
+    ],
+    "unresolved_candidates": [
+      "code",
+      "heartbeat",
+      "https",
+      "record"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Log_model.php",
+    "methods": [
+      "__construct",
+      "addAuditLogs",
+      "addAudit"
+    ],
+    "verified_tables": [],
+    "unresolved_candidates": [
+      "log_audits"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Logger_model.php",
+    "methods": [
+      "__construct",
+      "delete",
+      "get_all_active_alarm"
+    ],
+    "verified_tables": [],
+    "unresolved_candidates": [
+      "d_entity",
+      "logger",
+      "n_rule"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Plugins_model.php",
+    "methods": [
+      "__construct",
+      "insertRow",
+      "updateRow",
+      "getDataBy",
+      "deleteExtnDbAction"
+    ],
+    "verified_tables": [
+      "ia_menu",
+      "ia_plugins"
+    ],
+    "unresolved_candidates": [
+      "Menu",
+      "Record",
+      "extension",
+      "record"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Retention_model.php",
+    "methods": [
+      "policies",
+      "current",
+      "save",
+      "preview",
+      "purge",
+      "countOlder",
+      "deleteOlder",
+      "olderThan",
+      "upsertSetting"
+    ],
+    "verified_tables": [
+      "ia_setting"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/models/Setting_model.php",
+    "methods": [
+      "__construct",
+      "addUserType",
+      "insertRow",
+      "updateRow",
+      "GetDataById",
+      "deleteData",
+      "getAdminPermissions",
+      "delete"
+    ],
+    "verified_tables": [
+      "ia_custom_fields",
+      "ia_permission"
+    ],
+    "unresolved_candidates": [
+      "any",
+      "data",
+      "record",
+      "which"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Site_model.php",
+    "methods": [
+      "ranks",
+      "ready",
+      "allRows",
+      "node",
+      "byParent",
+      "descendantIds",
+      "assignedIds",
+      "visibleIds",
+      "visibleRows",
+      "canSee",
+      "tree",
+      "validatePlacement",
+      "saveNode",
+      "deleteNode",
+      "setDevices",
+      "bindableDevices",
+      "devicesOn",
+      "devicesUnder",
+      "activeAlarmCountByDevice",
+      "setChannels",
+      "channelIds",
+      "channels",
+      "layouts",
+      "deviceIdsForCurrentUser",
+      "layoutIdsForCurrentUser",
+      "alarmByNode",
+      "deviceCountByNode",
+      "normalizeSeverity",
+      "pinColor",
+      "usersForScope",
+      "saveUserScope",
+      "homeSummary",
+      "lastSeenUnixByNode",
+      "homeMapWidget"
+    ],
+    "verified_tables": [
+      "alarm_state",
+      "dashboard_layouts",
+      "device_data",
+      "device_templates",
+      "devices",
+      "ia_users",
+      "notification_channel_nodes",
+      "notification_channels",
+      "site_nodes",
+      "user_site_scopes",
+      "widgets"
+    ],
+    "unresolved_candidates": [
+      "MAX"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Templates_model.php",
+    "methods": [
+      "__construct",
+      "getSpecificTemplate",
+      "getTemplates",
+      "insertRow",
+      "updateRow"
+    ],
+    "verified_tables": [
+      "ia_email_templates"
+    ],
+    "unresolved_candidates": [
+      "data",
+      "database",
+      "record",
+      "templates"
+    ]
+  },
+  {
+    "file": "frontend/application/models/Update_model.php",
+    "methods": [
+      "__construct",
+      "getUpdateInfo",
+      "getCurrentDbVersion",
+      "upgradeDatabaseSilent"
+    ],
+    "verified_tables": [
+      "ia_setting"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/models/User_model.php",
+    "methods": [
+      "__construct",
+      "authUser",
+      "user",
+      "remember_user",
+      "delete",
+      "mailVerify",
+      "savePasswordResetOtp",
+      "verifyPasswordResetOtp",
+      "consumePasswordResetOtp",
+      "ResetPpassword",
+      "getDataBy",
+      "getWhereIn",
+      "checkExists",
+      "getUsers",
+      "getTemplate",
+      "insertRow",
+      "updateRow",
+      "get_list_box_data",
+      "getQrResult",
+      "getBarChartData",
+      "registrationMailVerify",
+      "getUserDevice",
+      "getDeviceAll",
+      "deleteDevice",
+      "salt",
+      "identity_check",
+      "login_remembered_user",
+      "set_session"
+    ],
+    "verified_tables": [
+      "devices",
+      "ia_email_templates",
+      "ia_users"
+    ],
+    "unresolved_candidates": [
+      "code",
+      "heartbeat",
+      "https",
+      "record"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/alarmlogs/models/Alarmlogs_model.php",
+    "methods": [
+      "applyScope",
+      "getAll",
+      "get_total_alarms",
+      "get_active_alarms",
+      "get_severity_breakdown",
+      "get_device_breakdown",
+      "get_unique_devices",
+      "get_unique_severities",
+      "get_unique_statuses",
+      "get_logs_for_export",
+      "update_alarm_status",
+      "get_alarm_by_id",
+      "get_related_alarms",
+      "get_dispatch_history",
+      "get_alarm_trends",
+      "get_device_alarm_summary",
+      "get_metric_alarm_summary"
+    ],
+    "verified_tables": [
+      "alarm_log_dispatch",
+      "alarm_logs",
+      "devices",
+      "notification_channels"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/alarmstate/models/Alarmstate_model.php",
+    "methods": [
+      "get_active_alarms",
+      "acknowledge"
+    ],
+    "verified_tables": [
+      "alarm_state",
+      "devices"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/calculation/models/Calculation_model.php",
+    "methods": [
+      "get_devices",
+      "get_device",
+      "save_metrics"
+    ],
+    "verified_tables": [
+      "devices"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/control/models/Control_model.php",
+    "methods": [
+      "ts",
+      "base_url",
+      "request",
+      "health",
+      "list_commands",
+      "create_command",
+      "update_command",
+      "delete_command",
+      "execute_command",
+      "release_hold",
+      "list_logs",
+      "list_schedules",
+      "create_schedule",
+      "update_schedule",
+      "delete_schedule",
+      "list_sequences",
+      "create_sequence",
+      "update_sequence",
+      "delete_sequence",
+      "execute_sequence",
+      "stop_sequence",
+      "pause_sequence",
+      "resume_sequence",
+      "list_rules",
+      "create_rule",
+      "update_rule",
+      "delete_rule",
+      "running_sequence_diagrams",
+      "active_rule_cards",
+      "rule_decode",
+      "rule_condition_summary",
+      "rule_action_summary",
+      "list_groups",
+      "create_group",
+      "update_group",
+      "delete_group",
+      "command_live_status",
+      "command_requested_state",
+      "card_tone",
+      "latest_metrics_for_device",
+      "interpret_feedback",
+      "status_text_label",
+      "infer_common_status",
+      "normalize_map_list",
+      "value_in_map",
+      "get_devices",
+      "get_device_control_context",
+      "load_device_row",
+      "decode_json",
+      "is_write_target_metric",
+      "build_write_target"
+    ],
+    "verified_tables": [
+      "device_data",
+      "device_templates",
+      "devices"
+    ],
+    "unresolved_candidates": [
+      "control"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/controllogs/models/Controllogs_model.php",
+    "methods": [
+      "apply_date_range",
+      "apply_filters",
+      "from_logs",
+      "select_logs",
+      "get_logs",
+      "count_logs",
+      "get_statistics",
+      "get_unique_groups",
+      "get_unique_devices",
+      "get_unique_sources",
+      "get_unique_results",
+      "get_logs_for_export",
+      "format_value_label",
+      "format_source_label"
+    ],
+    "verified_tables": [
+      "devices",
+      "ia_users"
+    ],
+    "unresolved_candidates": [
+      "control_command_logs",
+      "control_commands",
+      "control_groups",
+      "control_rules",
+      "control_sequences"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/dashboard/models/Dashboard_layout_model.php",
+    "methods": [
+      "__construct",
+      "get_all",
+      "get_all_names",
+      "has_sort_order_column",
+      "ensure_sort_order_column",
+      "applyLayoutOrdering",
+      "get_by_id",
+      "get_by_device",
+      "get_where_home",
+      "get_first_by_order",
+      "get_home_for_user",
+      "set_user_home",
+      "clear_user_home_for_layout",
+      "ensure_user_home_table",
+      "get_home_layout",
+      "insert_layout",
+      "update_layout",
+      "delete_layout",
+      "unset_all_home",
+      "update_sort_orders",
+      "log_event",
+      "get_items"
+    ],
+    "verified_tables": [
+      "dashboard_layout_items",
+      "dashboard_layouts",
+      "event_logs",
+      "ia_users",
+      "user_dashboard_homes",
+      "widgets"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/dashboard/models/Dashboard_model.php",
+    "methods": [
+      "__construct",
+      "log_event"
+    ],
+    "verified_tables": [
+      "event_logs"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/dashboard/models/Widget_model.php",
+    "methods": [
+      "get_widget_with_config",
+      "get_line_chart_data",
+      "get_bar_chart_data",
+      "_parse_time_range",
+      "_parse_time_interval",
+      "_align_start_to_interval",
+      "_aggregate_expr",
+      "get_line_chart_data_dynamic"
+    ],
+    "verified_tables": [
+      "dashboard_layout_items",
+      "device_data",
+      "devices",
+      "widgets"
+    ],
+    "unresolved_candidates": [
+      "DB",
+      "PHP"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/device/models/Device_categories_model.php",
+    "methods": [
+      "__construct",
+      "getAll",
+      "getAllActive",
+      "getById",
+      "getByName",
+      "insert",
+      "insertGetId",
+      "update",
+      "delete",
+      "checkUsage",
+      "getCategoriesWithCounts",
+      "getCategoryStats"
+    ],
+    "verified_tables": [
+      "device_templates",
+      "devices"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/device/models/Device_model.php",
+    "methods": [
+      "__construct",
+      "getAll",
+      "getCustomFields",
+      "getCustomFieldsHtml",
+      "getDevicesPaginated",
+      "getDevicesCount",
+      "getDeviceTemplate",
+      "getUniqueLocations",
+      "getUniqueTemplates",
+      "getUniqueCategories",
+      "getAllWithTemplate",
+      "get_all",
+      "getById",
+      "getDevicesForMetricBuilder",
+      "insert",
+      "update",
+      "delete",
+      "getLatestMetrics",
+      "get_local_application_by_id",
+      "callChirpstackAPI",
+      "registerDevice"
+    ],
+    "verified_tables": [
+      "device_categories",
+      "device_data",
+      "device_templates",
+      "devices",
+      "site_nodes"
+    ],
+    "unresolved_candidates": [
+      "device"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/device/models/Metrics_model.php",
+    "methods": [
+      "__construct",
+      "get_timeseries",
+      "get_timeseries_chart",
+      "get_latest_by_device",
+      "get_metrics_by_device",
+      "get_latest_value",
+      "resolve_typed_value",
+      "get_metric_datatype"
+    ],
+    "verified_tables": [
+      "device_data",
+      "devices"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/devicetemplate/models/Devicetemplate_model.php",
+    "methods": [
+      "__construct",
+      "getAll",
+      "getAllTemplate",
+      "getById",
+      "getByCategory",
+      "getByProtocol",
+      "getByCategoryAndProtocol",
+      "getUniqueCategories",
+      "getUniqueProtocols",
+      "insert",
+      "update",
+      "delete",
+      "getTemplateStats"
+    ],
+    "verified_tables": [
+      "device_categories"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/eventlogs/models/Eventlogs_model.php",
+    "methods": [
+      "get_datatable",
+      "log_event",
+      "get_unique_users",
+      "get_unique_action_types",
+      "get_unique_entity_types",
+      "get_log_by_id",
+      "get_logs_for_export",
+      "get_log_statistics",
+      "get_action_type_summary",
+      "get_user_activity_summary"
+    ],
+    "verified_tables": [
+      "event_logs",
+      "ia_users"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/graph/models/Graph_model.php",
+    "methods": [
+      "get_datatable"
+    ],
+    "verified_tables": [
+      "device_data"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/lorawan/models/Lorawan_model.php",
+    "methods": [
+      "__construct",
+      "callChirpstackAPI",
+      "add_gateway",
+      "get_gateways",
+      "get_applications",
+      "get_gateway",
+      "update_gateway",
+      "delete_gateway",
+      "create_application",
+      "update_application",
+      "delete_application",
+      "update_local_application",
+      "delete_local_application",
+      "get_local_application_by_id",
+      "save_application_to_db",
+      "get_all_local_applications",
+      "get_device_profiles",
+      "add_device",
+      "registerDevice"
+    ],
+    "verified_tables": [
+      "lorawan_applications"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/lorawan/models/add_gateway.php",
+    "methods": [],
+    "verified_tables": [],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/notification/models/Dashboard_model.php",
+    "methods": [
+      "__construct"
+    ],
+    "verified_tables": [],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/notification_manager/models/Health_checks_model.php",
+    "methods": [
+      "default_template",
+      "get_all",
+      "get",
+      "get_due",
+      "save",
+      "delete",
+      "claim",
+      "render",
+      "deliver",
+      "write_log",
+      "active_alarm_count",
+      "open_alarms",
+      "_replace_metrics",
+      "_format_reading",
+      "_hydrate",
+      "_flag",
+      "_label",
+      "_time",
+      "_update_next_run",
+      "_compute_next_run",
+      "_send_channel",
+      "_send_email",
+      "_http_json"
+    ],
+    "verified_tables": [
+      "alarm_logs",
+      "device_data",
+      "devices",
+      "health_check_logs",
+      "health_checks",
+      "notification_channels"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/notification_manager/models/Notification_channel_model.php",
+    "methods": [
+      "getAll",
+      "getAllIncludingDeleted",
+      "getById",
+      "getByIdIncludingDeleted",
+      "insert",
+      "update",
+      "delete",
+      "hardDelete",
+      "restore"
+    ],
+    "verified_tables": [],
+    "unresolved_candidates": [
+      "channel",
+      "data",
+      "database"
+    ]
+  },
+  {
+    "file": "frontend/application/modules/notification_manager/models/Notification_manager_model.php",
+    "methods": [
+      "__construct",
+      "getConnectedDevices",
+      "getLastMessage",
+      "getSuccessRate",
+      "getDeviceList",
+      "getMessageHistory",
+      "getChannelTemplate",
+      "sendTestMessage",
+      "getDashboardStats",
+      "getMetricsUsingChannel"
+    ],
+    "verified_tables": [
+      "alarm_log_dispatch",
+      "alarm_logs",
+      "devices",
+      "notification_channels"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/reports/models/Report_schedules_model.php",
+    "methods": [
+      "__construct",
+      "get_by_template",
+      "get_all_active",
+      "get_all_with_templates",
+      "get_due_schedules",
+      "get",
+      "save",
+      "delete",
+      "update_last_run",
+      "claim",
+      "_update_next_run",
+      "_compute_next_run"
+    ],
+    "verified_tables": [
+      "report_schedules",
+      "report_templates"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/reports/models/Reports_model.php",
+    "methods": [
+      "__construct",
+      "siteDeviceFilter",
+      "get_devices_list",
+      "get_metrics_by_device",
+      "get_metrics_datatype_by_devices",
+      "get_metrics_list",
+      "get_rooms_list",
+      "get_action_types_list",
+      "get_entity_types_list",
+      "get_templates_list",
+      "get_template",
+      "create_template",
+      "update_template",
+      "delete_template",
+      "insert_export_file",
+      "count_export_files",
+      "get_export_files",
+      "_export_files_query",
+      "get_export_file",
+      "delete_export_file"
+    ],
+    "verified_tables": [
+      "device_data",
+      "devices",
+      "event_logs",
+      "report_export_files",
+      "report_templates"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/reports log/models/Report_schedules_model.php",
+    "methods": [
+      "__construct",
+      "get_by_template",
+      "get_all_active",
+      "get_all_with_templates",
+      "get_due_schedules",
+      "get",
+      "save",
+      "delete",
+      "update_last_run",
+      "_update_next_run"
+    ],
+    "verified_tables": [
+      "report_schedules",
+      "report_templates"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/reports log/models/Reports_model.php",
+    "methods": [
+      "__construct",
+      "get_devices_list",
+      "get_metrics_by_device",
+      "get_metrics_datatype_by_devices",
+      "get_metrics_list",
+      "get_rooms_list",
+      "get_action_types_list",
+      "get_entity_types_list",
+      "get_templates_list",
+      "get_template",
+      "create_template",
+      "update_template",
+      "delete_template",
+      "insert_export_file",
+      "get_export_files",
+      "get_export_file",
+      "delete_export_file"
+    ],
+    "verified_tables": [
+      "device_data",
+      "devices",
+      "event_logs",
+      "report_export_files",
+      "report_templates"
+    ],
+    "unresolved_candidates": []
+  },
+  {
+    "file": "frontend/application/modules/widgets/models/Widgets_model.php",
+    "methods": [
+      "get_all",
+      "get",
+      "insert",
+      "update",
+      "delete"
+    ],
+    "verified_tables": [
+      "widgets"
+    ],
+    "unresolved_candidates": []
+  }
+]

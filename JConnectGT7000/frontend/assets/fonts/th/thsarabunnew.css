@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../Sarabun-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../Sarabun-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Thai font for body text */
+body {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif, Arial, Verdana, "Trebuchet MS", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Thai font for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+    font-weight: bold;
+}
+
+/* Thai font for reports */
+.report-container {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+}
+
+.report-title {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.report-subtitle {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+    font-size: 1.2em;
+}
+
+/* Thai font for tables */
+.report-table {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+}
+
+.report-table th {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+    font-weight: bold;
+}
+
+.report-table td {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif;
+}
+
+/* Thai font for PDF specific styles */
+.pdf-container {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+}
+
+.pdf-title {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.pdf-text {
+    font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+}
+
+/* Fallback for systems without Thai fonts */
+@supports not (font-display: swap) {
+    body {
+        font-family: 'Sarabun', sans-serif, Arial, Verdana;
+    }
+}
+
+/* Print styles for PDF generation */
+@media print {
+    body, .report-container, .pdf-container {
+        font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+    }
+    
+    table, th, td {
+        font-family: 'THSarabunNew', 'Sarabun', sans-serif !important;
+    }
+} 

@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Outer Plastic Bezel Gradient -->
+    <linearGradient id="outerBezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a656e"/>
+      <stop offset="30%" stop-color="#49525a"/>
+      <stop offset="70%" stop-color="#384047"/>
+      <stop offset="100%" stop-color="#2a3036"/>
+    </linearGradient>
+
+    <!-- Inner Front Panel Gradient -->
+    <linearGradient id="innerPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3c444a"/>
+      <stop offset="100%" stop-color="#2d3338"/>
+    </linearGradient>
+
+    <!-- LCD Bezel Recess Gradient -->
+    <linearGradient id="lcdBezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#21262a"/>
+      <stop offset="100%" stop-color="#31383e"/>
+    </linearGradient>
+
+    <!-- LCD Display Screen Background Gradient -->
+    <linearGradient id="lcdScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8cdd7"/>
+      <stop offset="50%" stop-color="#bdc3cf"/>
+      <stop offset="100%" stop-color="#b0b6c4"/>
+    </linearGradient>
+
+    <!-- Model Label Recess Box Gradient -->
+    <linearGradient id="modelRecessGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b3136"/>
+      <stop offset="100%" stop-color="#3b434a"/>
+    </linearGradient>
+
+    <!-- Round Button Gradient -->
+    <radialGradient id="buttonGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e1e5ea"/>
+      <stop offset="50%" stop-color="#bdc4cd"/>
+      <stop offset="85%" stop-color="#939ba6"/>
+      <stop offset="100%" stop-color="#6e7681"/>
+    </radialGradient>
+
+    <!-- Soft Drop Shadow Filters -->
+    <filter id="lcdInnerShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <filter id="buttonShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- MAIN METER ENCLOSURE (SQUARE PANEL) -->
+  <!-- ========================================== -->
+
+  <!-- Outer Bezel Rim -->
+  <rect x="100" y="100" width="600" height="600" rx="28" fill="url(#outerBezelGrad)"/>
+
+  <!-- Outer Bezel Chamfer Inner Line -->
+  <rect x="112" y="112" width="576" height="576" rx="20" fill="none" stroke="#6f7a85" stroke-width="2" opacity="0.6"/>
+
+  <!-- Front Panel Faceplate -->
+  <rect x="130" y="130" width="540" height="540" rx="14" fill="url(#innerPanelGrad)" stroke="#22272b" stroke-width="3"/>
+
+  <!-- Inner Panel Inset Frame -->
+  <rect x="145" y="145" width="510" height="510" rx="8" fill="none" stroke="#252a2e" stroke-width="2"/>
+
+  <!-- ========================================== -->
+  <!-- LOGO & BRANDING SECTION -->
+  <!-- ========================================== -->
+
+  <!-- Schneider Electric Logo (Top Left) -->
+  <g fill="#ffffff">
+    <text x="175" y="198" font-family="'DejaVu Sans', sans-serif" font-weight="bold" font-size="26" letter-spacing="-0.5">Schneider</text>
+    <text x="238" y="217" font-family="'DejaVu Sans', sans-serif" font-weight="Normal" font-size="14" letter-spacing="0.2">Electric</text>
+    <!-- Brand Globe Symbol 
+    <circle cx="212" cy="213" r="8" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 205 213 A 7 7 0 0 0 219 213 Z" fill="#ffffff"/> -->
+  </g>
+
+  <!-- EasyLogic PM2200 Model Plate (Top Right) -->
+  <g>
+    <rect x="440" y="178" width="205" height="34" rx="4" fill="url(#modelRecessGrad)" stroke="#23272a" stroke-width="1.5"/>
+    <text x="542" y="201" font-family="'DejaVu Sans', sans-serif" font-size="15" font-weight="bold" fill="#a8b6c2" text-anchor="middle" letter-spacing="0.5">EasyLogic™ PM2200</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- LCD DISPLAY SCREEN CONTAINER -->
+  <!-- ========================================== -->
+
+  <!-- LCD Screen Bezel Frame -->
+  <rect x="185" y="235" width="430" height="340" rx="6" fill="url(#lcdBezelGrad)" stroke="#1a1e21" stroke-width="2"/>
+
+  <!-- Actual LCD Glass Display -->
+  <rect x="195" y="245" width="410" height="320" rx="3" fill="url(#lcdScreenGrad)" stroke="#78808d" stroke-width="1.5" filter="url(#lcdInnerShadow)"/>
+
+  <!-- ========================================== -->
+  <!-- LCD DISPLAY CONTENT -->
+  <!-- ========================================== -->
+
+  <!-- Data Grid Rows -->
+  <!-- Row 1: V1 -->
+  <text x="210" y="278" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">V1</text>
+  <text id="V1" x="490" y="278" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="278" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">V</text>
+
+  <!-- Row 2: V2 -->
+  <text x="210" y="314" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">V2</text>
+  <text id="V2" x="490" y="314" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="314" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">V</text>
+
+  <!-- Row 3: V3 -->
+  <text x="210" y="350" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">V3</text>
+  <text id="V3" x="490" y="350" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="350" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">V</text>
+
+  <!-- Divider: Voltage / Current -->
+  <line x1="210" y1="380" x2="590" y2="380" stroke="#22272d" stroke-width="1.5"/>
+
+  <!-- Row 4: I1 -->
+  <text x="210" y="418" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">I1</text>
+  <text id="I1" x="490" y="418" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="418" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">A</text>
+
+  <!-- Row 5: I2 -->
+  <text x="210" y="454" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">I2</text>
+  <text id="I2" x="490" y="454" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="454" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">A</text>
+
+  <!-- Row 6: I3 -->
+  <text x="210" y="490" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">I3</text>
+  <text id="I3" x="490" y="490" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="490" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">A</text>
+
+  <!-- Divider: Current / Energy -->
+  <line x1="210" y1="512" x2="590" y2="512" stroke="#22272d" stroke-width="1.5"/>
+
+  <!-- Row 7: Energy -->
+  <text x="210" y="542" font-family="'DejaVu Sans', sans-serif" font-size="18" font-weight="bold" fill="#15181b">Energy</text>
+  <text id="Energy" x="490" y="542" font-family="'DejaVu Sans Mono', sans-serif" font-size="24" font-weight="bold" fill="#15181b" text-anchor="end" letter-spacing="0.5">0</text>
+  <text x="580" y="542" font-family="'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#15181b" text-anchor="end">kWh</text>
+
+  <!-- ========================================== -->
+  <!-- BUTTONS & HARDWARE PORTS -->
+  <!-- ========================================== -->
+
+  <!-- 4 Convex Push Buttons -->
+  <g id="physicalButtons" filter="url(#buttonShadow)">
+    <circle cx="235" cy="610" r="23" fill="url(#buttonGrad)" stroke="#3a4046" stroke-width="2"/>
+    <circle cx="235" cy="610" r="21" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+    <circle cx="315" cy="610" r="23" fill="url(#buttonGrad)" stroke="#3a4046" stroke-width="2"/>
+    <circle cx="315" cy="610" r="21" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+    <circle cx="395" cy="610" r="23" fill="url(#buttonGrad)" stroke="#3a4046" stroke-width="2"/>
+    <circle cx="395" cy="610" r="21" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+
+    <circle cx="475" cy="610" r="23" fill="url(#buttonGrad)" stroke="#3a4046" stroke-width="2"/>
+    <circle cx="475" cy="610" r="21" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Optical Communication Ports (Right Side) -->
+  <g fill="#1a1d20">
+    <rect x="548" y="590" width="12" height="6" rx="2"/>
+    <rect x="548" y="620" width="12" height="6" rx="2"/>
+  </g>
+
+</svg>

@@ -1,0 +1,250 @@
+{
+  "fetched_at": "2026-09-26T05:39:13.231Z",
+  "oids": 525,
+  "name": {
+    "snmp": "PEMON",
+    "ui": "PEMON",
+    "ac2": "PEMON"
+  },
+  "counts": {
+    "dc_strings": 2,
+    "ac_systems": 1,
+    "io_systems": 1
+  },
+  "comm": [
+    {
+      "key": "DCU",
+      "ok": true,
+      "raw": 0,
+      "details": []
+    },
+    {
+      "key": "ACU",
+      "ok": true,
+      "raw": 0,
+      "details": []
+    },
+    {
+      "key": "IOU",
+      "ok": false,
+      "raw": 32,
+      "details": [
+        "CAM1 Fail"
+      ]
+    }
+  ],
+  "ac_line1": {
+    "view1_v": 234,
+    "view1_a": 0.3,
+    "ac2_hz": 50,
+    "ac2_pw": 2,
+    "snmp_v": 234,
+    "snmp_a": 0.3
+  },
+  "checks": [
+    {
+      "suffix": "1.23",
+      "snmp_raw": "PEMON",
+      "scaled": "PEMON",
+      "ui": "PEMON",
+      "uiLabel": "Config System Name",
+      "match": true
+    },
+    {
+      "suffix": "1.26",
+      "snmp_raw": 4,
+      "scaled": 4,
+      "ui": 2,
+      "uiLabel": "View1 DCSTR",
+      "match": false
+    },
+    {
+      "suffix": "1.1",
+      "snmp_raw": 5600,
+      "scaled": 56,
+      "ui": 5600,
+      "uiLabel": "View1 HiF_ string1",
+      "match": true
+    },
+    {
+      "suffix": "1.2",
+      "snmp_raw": 4400,
+      "scaled": 44,
+      "ui": 4400,
+      "uiLabel": "View1 LoD_ string1",
+      "match": true
+    },
+    {
+      "suffix": "1.3",
+      "snmp_raw": 5200,
+      "scaled": 52,
+      "ui": 5200,
+      "uiLabel": "View1 LoF_ string1",
+      "match": true
+    },
+    {
+      "suffix": "1.7",
+      "snmp_raw": 520,
+      "scaled": 52,
+      "ui": 520,
+      "uiLabel": "AC_2 high freq",
+      "match": true
+    },
+    {
+      "suffix": "1.8",
+      "snmp_raw": 480,
+      "scaled": 48,
+      "ui": 480,
+      "uiLabel": "AC_2 low freq",
+      "match": true
+    },
+    {
+      "suffix": "1.9",
+      "snmp_raw": 2450,
+      "scaled": 245,
+      "ui": 2450,
+      "uiLabel": "AC_2 high volt",
+      "match": true
+    },
+    {
+      "suffix": "1.10",
+      "snmp_raw": 1950,
+      "scaled": 195,
+      "ui": 1950,
+      "uiLabel": "AC_2 low volt",
+      "match": true
+    },
+    {
+      "suffix": "1.11",
+      "snmp_raw": 1000,
+      "scaled": 100,
+      "ui": 1000,
+      "uiLabel": "AC_2 high current",
+      "match": true
+    },
+    {
+      "suffix": "1.12",
+      "snmp_raw": 0,
+      "scaled": 0,
+      "ui": 0,
+      "uiLabel": "AC_2 low current",
+      "match": true
+    },
+    {
+      "suffix": "1.13",
+      "snmp_raw": 22000,
+      "scaled": 22,
+      "ui": 22000,
+      "uiLabel": "AC_2 high power",
+      "match": true
+    },
+    {
+      "suffix": "1.14",
+      "snmp_raw": -22000,
+      "scaled": -22,
+      "ui": -22000,
+      "uiLabel": "AC_2 low power",
+      "match": true
+    },
+    {
+      "suffix": "2.1",
+      "snmp_raw": 278,
+      "scaled": 27.8,
+      "ui": 278,
+      "uiLabel": "View1 Temp1",
+      "match": true
+    },
+    {
+      "suffix": "2.2",
+      "snmp_raw": 53,
+      "scaled": 53,
+      "ui": 53,
+      "uiLabel": "View1 Hum1",
+      "match": true
+    },
+    {
+      "suffix": "2.3",
+      "snmp_raw": 26,
+      "scaled": 0.26,
+      "ui": 26,
+      "uiLabel": "View1 VDC_ string1",
+      "match": true
+    },
+    {
+      "suffix": "2.4",
+      "snmp_raw": 0,
+      "scaled": 0,
+      "ui": 0,
+      "uiLabel": "View1 IDC_ string1",
+      "match": true
+    },
+    {
+      "suffix": "2.8",
+      "snmp_raw": 2340,
+      "scaled": 234,
+      "ui": 2340,
+      "uiLabel": "View1 VAC Line1",
+      "match": true
+    },
+    {
+      "suffix": "2.9",
+      "snmp_raw": 3,
+      "scaled": 0.3,
+      "ui": 3,
+      "uiLabel": "View1 IAC Line1",
+      "match": true
+    },
+    {
+      "suffix": "2.8",
+      "snmp_raw": 2340,
+      "scaled": 234,
+      "ui": 2340,
+      "uiLabel": "AC_2 VAC Line1",
+      "match": true
+    },
+    {
+      "suffix": "2.9",
+      "snmp_raw": 3,
+      "scaled": 0.3,
+      "ui": 3,
+      "uiLabel": "AC_2 IAC Line1",
+      "match": true
+    },
+    {
+      "suffix": "2.5/2.6/2.7",
+      "snmp_raw": [
+        40,
+        94,
+        67
+      ],
+      "scaled": [
+        0.04,
+        0.094,
+        0.067
+      ],
+      "ui": {
+        "cells": [
+          94,
+          40,
+          94,
+          40
+        ],
+        "min": 40,
+        "max": 94,
+        "avg": 67
+      },
+      "uiLabel": "DC_1.htm cells string1",
+      "match": true
+    }
+  ],
+  "mismatches": [
+    {
+      "suffix": "1.26",
+      "snmp_raw": 4,
+      "scaled": 4,
+      "ui": 2,
+      "uiLabel": "View1 DCSTR",
+      "match": false
+    }
+  ]
+}

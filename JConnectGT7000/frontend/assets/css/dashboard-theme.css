@@ -1,0 +1,403 @@
+/* JConnect dashboard — unified widget chrome & dark-theme polish */
+
+.dashboard-layout-canvas .grid-stack-item-content.widget-chrome {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* Map widget */
+.map-view-wrapper {
+  display: block;
+  border-radius: inherit;
+  background: transparent;
+}
+
+.map-container .map-view-wrapper.bg-body {
+  background: transparent !important;
+}
+
+/* Temperature / humidity */
+.widget-temp-humidity {
+  padding: 0.65rem 0.75rem;
+  border-radius: inherit;
+}
+
+.widget-temp-humidity > .d-flex > .small {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.72);
+  text-transform: none;
+}
+
+.widget-temp-humidity .metric-pill {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.55rem 0.5rem;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+}
+
+.widget-temp-humidity .metric-pill.temp .icon {
+  color: #34d399;
+}
+
+.widget-temp-humidity .metric-pill.humidity .icon {
+  color: #38bdf8;
+}
+
+.widget-temp-humidity .metric-pill .value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f1f5f9;
+}
+
+.widget-temp-humidity .metric-pill .unit {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Value box */
+.widget-value-box {
+  border-radius: inherit;
+  padding: 0.5rem 0.65rem;
+}
+
+.widget-value-box .label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.02em;
+}
+
+.widget-value-box .value {
+  line-height: 1.15;
+  color: #f8fafc;
+}
+
+.widget-value-box .time {
+  color: rgba(255, 255, 255, 0.42) !important;
+}
+
+/* Camera stream */
+.widget-camera-stream {
+  border-radius: inherit;
+}
+
+.widget-camera-stream > .d-flex:first-child {
+  background: rgba(0, 0, 0, 0.55) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+}
+
+/* Line chart widget */
+.widget-linechart {
+  border-radius: inherit;
+}
+
+.widget-linechart .dashboard-chart-title,
+.widget-linechart [id^="chartLabel_"] {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.widget-linechart .dashboard-table {
+  --bs-table-bg: transparent;
+  --bs-table-color: rgba(255, 255, 255, 0.88);
+  --bs-table-border-color: rgba(255, 255, 255, 0.08);
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.04);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.02);
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.widget-linechart .dashboard-table thead th {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+}
+
+.widget-linechart .dashboard-table tbody td {
+  border-color: rgba(255, 255, 255, 0.06);
+  vertical-align: middle;
+}
+
+.widget-linechart .loading-overlay {
+  background: rgba(15, 18, 28, 0.72);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+/* Alarm panel */
+.dashboard-alarm-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 8px 24px rgba(0, 0, 0, 0.22);
+  background: transparent !important;
+}
+
+.dashboard-alarm-card .card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dashboard-alarm-card .card-header h6 {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+#alarmTable.dashboard-table {
+  --bs-table-bg: transparent;
+  --bs-table-color: rgba(255, 255, 255, 0.88);
+  --bs-table-border-color: rgba(255, 255, 255, 0.08);
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.04);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.02);
+}
+
+#alarmTable.dashboard-table thead th {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#alarmTable.dashboard-table tbody td {
+  border-color: rgba(255, 255, 255, 0.06);
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+#alarmTable.dashboard-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+.dashboard-alarm-card .dataTables_wrapper,
+.dashboard-alarm-card .dataTables_info {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dashboard-alarm-card table.dataTable tbody tr,
+.dashboard-alarm-card table.dataTable thead th {
+  background-color: transparent !important;
+}
+
+.dashboard-alarm-card table.dataTable.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  box-shadow: none;
+}
+
+.dashboard-alarm-card table.dataTable.table-hover > tbody > tr:hover > * {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: none;
+}
+
+/* Alarm highlight — keep readable on tinted widgets */
+.widget-alarm {
+  box-shadow: inset 0 0 0 2px #ef4444 !important;
+}
+
+.widget-alarm-boder,
+.widget-alarm-boder {
+  border: 2px solid #ef4444 !important;
+}
+
+/* Light theme overrides */
+[data-bs-theme="light"] .dashboard-layout-canvas .grid-stack-item-content.widget-chrome {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+[data-bs-theme="light"] .widget-temp-humidity > .d-flex > .small,
+[data-bs-theme="light"] .widget-value-box .label {
+  color: rgba(15, 23, 42, 0.65);
+}
+
+[data-bs-theme="light"] .widget-temp-humidity .metric-pill {
+  background: transparent;
+  border: none;
+}
+
+[data-bs-theme="light"] .widget-temp-humidity .metric-pill .value,
+[data-bs-theme="light"] .widget-value-box .value {
+  color: #0f172a;
+}
+
+[data-bs-theme="light"] .dashboard-alarm-card {
+  background: transparent !important;
+}
+
+[data-bs-theme="light"] .dashboard-alarm-card .card-header {
+  background: transparent;
+  color: #0f172a;
+}
+
+[data-bs-theme="light"] #alarmTable.dashboard-table,
+[data-bs-theme="light"] .widget-linechart .dashboard-table {
+  --bs-table-color: #1e293b;
+  --bs-table-border-color: rgba(15, 23, 42, 0.1);
+  --bs-table-hover-bg: rgba(15, 23, 42, 0.04);
+  --bs-table-striped-bg: rgba(15, 23, 42, 0.03);
+}
+
+[data-bs-theme="light"] #alarmTable.dashboard-table thead th,
+[data-bs-theme="light"] .widget-linechart .dashboard-table thead th {
+  background: transparent;
+  color: rgba(15, 23, 42, 0.65);
+  border-bottom-color: rgba(15, 23, 42, 0.12);
+}
+
+[data-bs-theme="light"] #alarmTable.dashboard-table tbody td,
+[data-bs-theme="light"] .widget-linechart .dashboard-table tbody td {
+  color: #1e293b;
+  border-color: rgba(15, 23, 42, 0.08);
+  background: transparent !important;
+}
+
+[data-bs-theme="light"] #alarmTable.dashboard-table tbody tr:hover td,
+[data-bs-theme="light"] .widget-linechart .dashboard-table tbody tr:hover td {
+  background: rgba(15, 23, 42, 0.04) !important;
+}
+
+[data-bs-theme="light"] .dashboard-alarm-card .dataTables_wrapper,
+[data-bs-theme="light"] .dashboard-alarm-card .dataTables_info {
+  color: rgba(15, 23, 42, 0.55);
+}
+
+[data-bs-theme="light"] .dashboard-alarm-card table.dataTable.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(15, 23, 42, 0.03) !important;
+}
+
+[data-bs-theme="light"] .dashboard-alarm-card table.dataTable.table-hover > tbody > tr:hover > * {
+  background-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+/* Select2 (Bootstrap 5 theme) — dark mode */
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection {
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+  color: var(--bs-body-color);
+  line-height: 1.5;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection--single .select2-selection__placeholder {
+  color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection__arrow b {
+  border-color: var(--bs-secondary-color) transparent transparent transparent;
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5.select2-container--open .select2-selection__arrow b {
+  border-color: transparent transparent var(--bs-secondary-color) transparent;
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5.select2-container--focus .select2-selection,
+[data-bs-theme="dark"] .select2-container--bootstrap-5.select2-container--open .select2-selection {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-dropdown {
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-search--dropdown .select2-search__field {
+  background-color: var(--bs-tertiary-bg, var(--bs-body-bg));
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-search--dropdown .select2-search__field::placeholder {
+  color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-results__option {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-results__option--selected {
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection__clear {
+  color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="dark"] .select2-container--bootstrap-5 .select2-selection__clear:hover {
+  color: var(--bs-body-color);
+}
+
+/* Dropdown is often appended to form/body (dropdownParent), not under .select2-container */
+[data-bs-theme="dark"] .select2-dropdown {
+  background-color: var(--bs-body-bg) !important;
+  border-color: var(--bs-border-color) !important;
+  color: var(--bs-body-color);
+  z-index: 1095;
+}
+
+[data-bs-theme="dark"] .select2-search--dropdown {
+  background-color: var(--bs-body-bg);
+  padding: 0.375rem;
+}
+
+[data-bs-theme="dark"] .select2-search--dropdown .select2-search__field,
+[data-bs-theme="dark"] .select2-dropdown input.select2-search__field {
+  background-color: var(--bs-body-bg) !important;
+  border: 1px solid var(--bs-border-color) !important;
+  color: var(--bs-body-color) !important;
+  border-radius: var(--bs-border-radius, 0.375rem);
+  outline: none;
+}
+
+[data-bs-theme="dark"] .select2-search--dropdown .select2-search__field:focus {
+  border-color: var(--bs-primary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+[data-bs-theme="dark"] .select2-results__option.select2-results__option--selectable {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .select2-results__option--highlighted.select2-results__option--selectable,
+[data-bs-theme="dark"] .select2-results__option--highlighted[aria-selected] {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+[data-bs-theme="dark"] .select2-results__options {
+  background-color: var(--bs-body-bg);
+}
+

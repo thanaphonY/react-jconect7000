@@ -1,0 +1,50 @@
+Igniter Admin Task List:
+
+Login Page:
+1) Replace text "Sign in to start your session" to "Login"(Done)
+2) Replace text "Register Now!" to "Sign Up"(Done)
+3) Change Page Title to "Login - Title of website"(Done)
+
+Sign Up:
+4) Replace text "Register a new membership" to "Sign Up"(Done)
+5) Replace text "I already have a membership" to "Already have an account? Login"(Done)
+ 
+Change URL to "login":
+6) http://dev1.ibrinfotech.com/Igniter_Admin/index.php/login(Done)
+
+8) Change URL "forgot_password" 
+from
+http://dev1.ibrinfotech.com/Igniter_Admin/index.php/user/forgetpassword
+to
+http://dev1.ibrinfotech.com/Igniter_Admin/index.php/forgot_password (Done)
+
+9) Change Logo text color "Igniter Admin" to White. (Query)
+
+10) Dashboard - Modify to Current Version / Update and Latest Plugins by iframe
+Remove: Last 10 Registration, Monthly Registration 
+
+11) Profile - Design Change , remove status fields (Done)
+
+12) Users - Add form - remove Status, remove feature to login from username. 
+Add form, edit form design change. (Done)
+
+13) Users List -> Design update, fields alter - Remove status field and Create Date, change sequence to Name, Email, User Type (Done)
+
+14) Change "Invite People" to "Invite User's" (Done)
+
+15) Plugins - Desing change, remove limit of pages, remove showing pages 1 of 1, remove pagination, (Done)
+
+16) Change "Search plugins" to "Plugin Store" (Done)
+
+------------------------ Query Points ---------------------
+17) Version Compatibility
+PHP - 7.x, 5.5,5.6
+Codeigniter - Latest (3.1.9) (Done)
+MySql - Latest
+
+18) Dashboard - Modify to Current Version / Update and Latest Plugins by iframe
+Remove: Last 10 Registration, Monthly Registration
+
+7) Favicon - Use of Igniter Admin
+
+19) Change Logo text color "Igniter Admin" to White. (Done)

@@ -1,0 +1,1016 @@
+[
+  {
+    "source": "frontend/application/views/add_device.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/add_user copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/add_user.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/add_update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/add_update_api.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/api.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/info.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/timer.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/device/timmer copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/cli/error_404.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/cli/error_db.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/cli/error_exception.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/cli/error_general.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/cli/error_php.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/html/error_404.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/html/error_db.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/html/error_exception.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/html/error_general.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/errors/html/error_php.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/forget_password.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/home.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/homeBank.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/footer.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/footer_bkk.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/footerfd.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/header.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/header_bkk.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/include/headerf.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/logger_table.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/login.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/plugins/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/profile.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/public.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/register.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/set_password.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/add_update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/config_backup.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/email_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/general_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/permissions_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/retention.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting/tabs.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/add_update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/cf_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/email_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/general_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/network_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/permissions_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/setting copy/update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/access.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/access_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/api.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/form.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/home_panel.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/site/view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/templates/add_update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/templates/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/update.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/user_table.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/views/verify_otp.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/alarmlogs/views/export_preview.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/alarmlogs/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/alarmlogs/views/pdf_template.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/calculation/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/control/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/controllogs/views/export_preview.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/controllogs/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/controllogs/views/pdf_template.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/dashboard/edit_layout.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/dashboard/view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/form_add.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/form_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/alarm_summary.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/bar_chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/camera_stream.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/cooling_panel.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/gauge.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/heatmap.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/level_bar.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/line_chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/line_chart_dynamic copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/line_chart_dynamic.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/map_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/navigator.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/power_meter.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/ratio.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/status_grid.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/svg_widget.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/table.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/temp_hum_sensor copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/temp_hum_sensor.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/ups_panel.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/value_box.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/value_box2.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/value_box3.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets/zone_overview.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/gauge.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/line_chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/map_view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/ratio.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/temp_hum_sensor.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/value_box.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/dashboard/views/widgets copy/value_box3.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/device_dashboard_mockup.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/device_info_tab.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/device_layout_tab.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/device_view_chart.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/form_add.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/form_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/communication.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/communication_add.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/communication_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/confirm.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/confirm_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/dashboard.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/device_info.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/device_info_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/device_role_fields.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/metrics.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/metrics_add.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/metrics_edit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/select.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/partials/site_node_select.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device/view.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device_categories/form.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device_categories/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/device_upload_csv.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/device/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/form.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/form2bkk.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/communication.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/dashboard.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/device_info.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/general_info.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/metrics copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/device_template/partials/metrics.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/devicetemplate/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/eventlogs/views/GeneratePdfView.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/eventlogs/views/export_preview.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/eventlogs/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/eventlogs/views/pdf_template.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/graph/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/lorawan/views/add_application.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/lorawan/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification/views/index copy.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification_manager/views/form.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification_manager/views/health_checks.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification_manager/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/notification_manager/views/index_enhanced.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports/views/builder.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports/views/files.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports/views/run.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports/views/schedules.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports log/views/builder.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports log/views/files.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports log/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports log/views/run.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/reports log/views/schedules.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/widgets/views/form_addedit.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  },
+  {
+    "source": "frontend/application/modules/widgets/views/index.php",
+    "migration_status": "pending",
+    "api_contract_status": "not_verified",
+    "ui_parity_status": "not_verified"
+  }
+]

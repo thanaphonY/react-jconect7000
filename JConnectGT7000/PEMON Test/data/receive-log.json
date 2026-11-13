@@ -1,0 +1,20 @@
+[
+  {
+    "received_at": "2026-09-25T10:33:51.232Z",
+    "method": "GET",
+    "path": "/api",
+    "query": {
+      "VDC": "11776",
+      "IDC": "-24773",
+      "src": "pemon-sim"
+    },
+    "headers": {
+      "host": "127.0.0.1:3080",
+      "content-type": "",
+      "user-agent": "curl/8.7.1",
+      "content-length": ""
+    },
+    "body": "",
+    "json": null
+  }
+]

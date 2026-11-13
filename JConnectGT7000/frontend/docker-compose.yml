@@ -1,0 +1,23 @@
+services:
+  test:
+    build: .
+    image: frontendgen2-php83
+    container_name: frontendgen2-test
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    working_dir: /frontendgen2
+    volumes:
+      - .:/frontendgen2
+      - ./custom-php.ini:/usr/local/etc/php/conf.d/custom-php.ini
+    ports:
+      - "80:80"
+    environment:
+      - COMPOSER_ALLOW_SUPERUSER=1
+    networks:
+      - jconnect
+    command: ["php", "-S", "0.0.0.0:80", "-t", "/frontendgen2"]
+
+networks:
+  jconnect:
+    external: true
+    name: jconnectgen3

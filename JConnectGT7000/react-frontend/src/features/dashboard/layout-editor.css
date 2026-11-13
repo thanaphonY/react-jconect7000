@@ -1,0 +1,65 @@
+/* PHP dashboard/edit_layout geometry and chrome, scoped to this editor. */
+.php-layout-editor{width:100%;color:inherit}
+.layout-editor-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:24px}
+.php-layout-editor .layout-editor-title{font-size:28px;line-height:1.2;font-weight:500;margin-bottom:8px!important}
+.php-layout-editor .ant-breadcrumb{font-size:16px;line-height:24px}
+.php-layout-editor .ant-breadcrumb a{color:#6ea8fe}
+.php-layout-editor .ant-btn{height:31px;border-radius:4px;padding:4px 8px;font-size:14px;box-shadow:none}
+.php-layout-editor .ant-btn-primary{background:#0d6efd;border-color:#0d6efd}
+.layout-editor-add.ant-btn-primary{background:#198754;border-color:#198754}
+.layout-editor-add.ant-btn-primary:hover{background:#157347!important;border-color:#146c43!important}
+.layout-editor-container{height:calc(100vh - 200px);min-height:260px;overflow:hidden;position:relative;border:1px solid #eee}
+.layout-editor-scroll{width:100%;height:100%;overflow:auto;position:relative}
+.php-layout-editor .dashboard-layout-canvas{width:1200px;min-height:400px;position:relative;background-size:cover;background-position:center;background-repeat:no-repeat;transform-origin:top left}
+.php-layout-editor .grid-stack-item-content{display:flex;flex-direction:row;justify-content:space-between;padding:4px;border:1px solid #ddd;border-radius:0;background:transparent;font-size:.85rem;overflow:hidden}
+.layout-widget-caption{min-width:100px;flex:1;display:flex;flex-direction:column;padding:4px;line-height:1.5}
+.layout-widget-caption strong{font-weight:700}
+.layout-widget-actions{display:flex;flex-direction:column;align-items:stretch;flex-shrink:0;gap:4px}
+.php-layout-editor .layout-widget-actions .ant-btn{width:32px;height:23px;min-width:0;padding:0 8px;font-size:14px;line-height:21px;border-radius:4px;background:transparent}
+.php-layout-editor .layout-widget-configure{color:#0d6efd;border-color:#0d6efd}
+.php-layout-editor .layout-widget-duplicate{color:#6c757d;border-color:#6c757d}
+.php-layout-editor .layout-widget-remove{color:#dc3545;border-color:#dc3545}
+.php-layout-editor .layout-widget-actions .ant-btn:hover{color:white!important}
+.php-layout-editor .layout-widget-configure:hover{background:#0d6efd!important;border-color:#0d6efd!important}
+.php-layout-editor .layout-widget-duplicate:hover{background:#6c757d!important;border-color:#6c757d!important}
+.php-layout-editor .layout-widget-remove:hover{background:#dc3545!important;border-color:#dc3545!important}
+.layout-editor-config .ant-drawer-title,.layout-editor-config .ant-drawer-close{color:#dee2e6}
+.layout-editor-config .ant-drawer-header,.layout-editor-config .ant-drawer-footer{padding:16px;border-color:#495057}
+.layout-editor-config .ant-drawer-body{padding:16px}
+.layout-editor-config .ant-drawer-content-wrapper{box-shadow:-4px 0 10px #0005!important}
+@media(max-width:768px){.layout-editor-heading{flex-wrap:wrap}.layout-editor-config .ant-drawer-content-wrapper{width:100%!important}}
+
+/* GridStack ships column widths up to 12; PHP uses a custom 16-column grid. */
+.php-layout-editor .gs-16 > .grid-stack-item { width:6.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="1"] { width:6.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="2"] { width:12.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="3"] { width:18.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="4"] { width:25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="5"] { width:31.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="6"] { width:37.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="7"] { width:43.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="8"] { width:50%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="9"] { width:56.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="10"] { width:62.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="11"] { width:68.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="12"] { width:75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="13"] { width:81.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="14"] { width:87.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="15"] { width:93.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-w="16"] { width:100%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="0"] { left:0%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="1"] { left:6.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="2"] { left:12.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="3"] { left:18.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="4"] { left:25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="5"] { left:31.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="6"] { left:37.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="7"] { left:43.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="8"] { left:50%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="9"] { left:56.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="10"] { left:62.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="11"] { left:68.75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="12"] { left:75%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="13"] { left:81.25%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="14"] { left:87.5%; }
+.php-layout-editor .gs-16 > .grid-stack-item[gs-x="15"] { left:93.75%; }

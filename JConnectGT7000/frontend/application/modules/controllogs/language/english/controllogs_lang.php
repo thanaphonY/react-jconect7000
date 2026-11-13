@@ -1,0 +1,38 @@
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+$lang['controllogs'] = 'Control Logs';
+$lang['controllogs_permission_denied'] = 'You do not have permission to view Control Logs.';
+$lang['home'] = 'Home';
+$lang['today'] = 'Today';
+$lang['yesterday'] = 'Yesterday';
+$lang['last_7_days'] = 'Last 7 Days';
+$lang['last_30_days'] = 'Last 30 Days';
+$lang['custom_range'] = 'Custom Range';
+$lang['start_date'] = 'Start Date';
+$lang['end_date'] = 'End Date';
+$lang['all'] = 'All';
+$lang['date_time'] = 'Date Time';
+$lang['command'] = 'Command';
+$lang['device'] = 'Device';
+$lang['group'] = 'Group';
+$lang['source'] = 'Source';
+$lang['value'] = 'Value';
+$lang['value_on'] = 'ON';
+$lang['value_off'] = 'OFF';
+$lang['result'] = 'Result';
+$lang['user'] = 'User';
+$lang['search'] = 'Search';
+$lang['filters'] = 'Filters';
+$lang['total_logs'] = 'Total Logs';
+$lang['written'] = 'Written';
+$lang['failed'] = 'Failed';
+$lang['devices'] = 'Devices';
+$lang['ungrouped'] = 'Ungrouped';
+$lang['all_groups'] = 'All Groups';
+$lang['all_devices'] = 'All Devices';
+$lang['all_sources'] = 'All Sources';
+$lang['all_results'] = 'All Results';
+$lang['no_data'] = 'No data available';
+$lang['search_placeholder'] = 'Search command, device, group, source...';
+$lang['preview_export'] = 'Preview Export';

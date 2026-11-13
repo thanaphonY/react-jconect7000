@@ -1,0 +1,790 @@
+{
+  "ok": true,
+  "url": "http://192.168.2.2/View1.js?1790396607116",
+  "status": 200,
+  "elapsed_ms": 13956,
+  "fetched_at": "2026-09-26T04:23:41.072Z",
+  "decoded": {
+    "time": "Thu Feb 18 1982 20:32:46",
+    "counts": {
+      "dc_strings": 2,
+      "ac_systems": 1,
+      "io_systems": 1
+    },
+    "dc": [
+      {
+        "index": 1,
+        "voltage_v": 0.26,
+        "current_a": 0,
+        "high_float_v": 56,
+        "low_float_v": 52,
+        "low_discharge_v": 44,
+        "fault_raw": 112,
+        "faults": [
+          "Sys Low Float",
+          "Cell Low Disch",
+          "Sys Low Disch"
+        ],
+        "vstr_v": 0.26,
+        "idc_a": 0,
+        "temp_c": 0,
+        "remain_min": 600,
+        "discharge_min": 0,
+        "remain_ah": 2,
+        "discharge_ah": 0,
+        "cell_avg_v": 0.067,
+        "cell_max_v": 0.094,
+        "cell_min_v": 0.04,
+        "cells": [
+          {
+            "index": 1,
+            "voltage_v": 0.094,
+            "raw": 94
+          },
+          {
+            "index": 2,
+            "voltage_v": 0.04,
+            "raw": 40
+          },
+          {
+            "index": 3,
+            "voltage_v": 0.094,
+            "raw": 94
+          },
+          {
+            "index": 4,
+            "voltage_v": 0.04,
+            "raw": 40
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "voltage_v": 0.26,
+        "current_a": 0,
+        "high_float_v": 56,
+        "low_float_v": 52,
+        "low_discharge_v": 44,
+        "fault_raw": 112,
+        "faults": [
+          "Sys Low Float",
+          "Cell Low Disch",
+          "Sys Low Disch"
+        ],
+        "vstr_v": 0.26,
+        "idc_a": 0,
+        "temp_c": 0,
+        "remain_min": 600,
+        "discharge_min": 0,
+        "remain_ah": 100,
+        "discharge_ah": 0,
+        "cell_avg_v": 0.067,
+        "cell_max_v": 0.094,
+        "cell_min_v": 0.04,
+        "cells": [
+          {
+            "index": 1,
+            "voltage_v": 0.04,
+            "raw": 40
+          },
+          {
+            "index": 2,
+            "voltage_v": 0.094,
+            "raw": 94
+          },
+          {
+            "index": 3,
+            "voltage_v": 0.04,
+            "raw": 40
+          },
+          {
+            "index": 4,
+            "voltage_v": 0.094,
+            "raw": 94
+          }
+        ]
+      }
+    ],
+    "ac": [
+      {
+        "index": 1,
+        "line_count": 6,
+        "type": 0,
+        "fault_raw": 32554,
+        "faults": [
+          "High AC Freq",
+          "High AC Voltage",
+          "High AC Current",
+          "Low AC Power",
+          "Line 1 Fault",
+          "Line 2 Fault",
+          "Line 3 Fault",
+          "Line 4 Fault",
+          "Line 5 Fault",
+          "Line 6 Fault"
+        ],
+        "lines": [
+          {
+            "index": 1,
+            "voltage_v": 2431.7,
+            "current_a": 4924.6,
+            "flag": 2,
+            "state": "fault"
+          },
+          {
+            "index": 2,
+            "voltage_v": 4863.5,
+            "current_a": 4530.2,
+            "flag": 2,
+            "state": "fault"
+          },
+          {
+            "index": 3,
+            "voltage_v": 909.7,
+            "current_a": 1005.5,
+            "flag": 2,
+            "state": "fault"
+          },
+          {
+            "index": 4,
+            "voltage_v": 4138.8,
+            "current_a": 1503.1,
+            "flag": 2,
+            "state": "fault"
+          },
+          {
+            "index": 5,
+            "voltage_v": 2627,
+            "current_a": 79.8,
+            "flag": 2,
+            "state": "fault"
+          },
+          {
+            "index": 6,
+            "voltage_v": 4163.1,
+            "current_a": 73.9,
+            "flag": 2,
+            "state": "fault"
+          }
+        ]
+      }
+    ],
+    "io": [
+      {
+        "index": 1,
+        "fault_raw": 0,
+        "faults": [],
+        "inputs": [
+          {
+            "name": "In1",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In2",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In3",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In4",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In5",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In6",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In7",
+            "present": true,
+            "fault": false
+          },
+          {
+            "name": "In8",
+            "present": true,
+            "fault": false
+          }
+        ],
+        "outputs": [
+          {
+            "name": "Out1",
+            "on": false
+          },
+          {
+            "name": "Out2",
+            "on": false
+          },
+          {
+            "name": "Out3",
+            "on": false
+          },
+          {
+            "name": "Out4",
+            "on": false
+          }
+        ],
+        "sensors": [
+          {
+            "name": "Temp1",
+            "enabled": true,
+            "celsius": 27.4,
+            "humidity_pct": 54
+          },
+          {
+            "name": "Temp2",
+            "enabled": false,
+            "celsius": null,
+            "humidity_pct": null
+          }
+        ]
+      }
+    ],
+    "sys": [
+      {
+        "key": "RST",
+        "ok": true,
+        "raw": 0,
+        "details": []
+      },
+      {
+        "key": "DCU",
+        "ok": false,
+        "raw": 2,
+        "details": [
+          "#1 Comm Err"
+        ]
+      },
+      {
+        "key": "ACU",
+        "ok": false,
+        "raw": 2,
+        "details": [
+          "#1 Comm Err"
+        ]
+      },
+      {
+        "key": "IOU",
+        "ok": false,
+        "raw": 32,
+        "details": [
+          "CAM1 Fail"
+        ]
+      },
+      {
+        "key": "SHT",
+        "ok": true,
+        "raw": 0,
+        "details": []
+      },
+      {
+        "key": "PSP",
+        "ok": false,
+        "raw": 32,
+        "details": [
+          "AC supply Fail"
+        ]
+      },
+      {
+        "key": "LAN",
+        "ok": true,
+        "raw": 0,
+        "details": []
+      },
+      {
+        "key": "WEB",
+        "ok": true,
+        "raw": 0,
+        "details": []
+      }
+    ],
+    "equipment": {
+      "type": 0,
+      "type_name": "Rectifier",
+      "status_raw": 168,
+      "status": "DC Output Fail, Low Remain time(E), Low Backup time(E)",
+      "faults": [
+        "DC Output Fail",
+        "Low Remain time(E)",
+        "Low Backup time(E)"
+      ],
+      "ac_input_v": [
+        2431.7
+      ],
+      "ac_input_kw": [
+        15.454
+      ],
+      "battery_v": [
+        0.26
+      ],
+      "battery_a": [
+        0
+      ],
+      "remain_min": [
+        600
+      ],
+      "estimate_discharge_wh": 0,
+      "estimate_backup_min": 0,
+      "estimate_remain_min": 0
+    },
+    "raw": {
+      "Time": "Thu Feb 18 1982 20:32:46",
+      "ACSTR": 1,
+      "DCSTR": 2,
+      "IOSTR": 1,
+      "ACs": [
+        0,
+        6
+      ],
+      "DCF": [
+        0,
+        112,
+        112
+      ],
+      "ACF": [
+        0,
+        32554
+      ],
+      "IOF": [
+        0,
+        0
+      ],
+      "HiF_": [
+        0,
+        5600,
+        5600
+      ],
+      "LoD_": [
+        0,
+        4400,
+        4400
+      ],
+      "LoF_": [
+        0,
+        5200,
+        5200
+      ],
+      "VDC_": [
+        0,
+        26,
+        26
+      ],
+      "IDC_": [
+        0,
+        0,
+        0
+      ],
+      "ACtype": [
+        0,
+        0
+      ],
+      "VAC": [
+        0,
+        [
+          0,
+          24317,
+          48635,
+          9097,
+          41388,
+          26270,
+          41631
+        ]
+      ],
+      "FVAC": [
+        0,
+        [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "IAC": [
+        0,
+        [
+          0,
+          49246,
+          45302,
+          10055,
+          15031,
+          798,
+          739
+        ]
+      ],
+      "SYSF": [
+        0,
+        0,
+        2,
+        2,
+        32,
+        0,
+        32,
+        0,
+        0,
+        547,
+        22355,
+        4697
+      ],
+      "TT": [
+        0,
+        [
+          0,
+          274,
+          0
+        ]
+      ],
+      "H": [
+        0,
+        [
+          0,
+          54,
+          0
+        ]
+      ],
+      "SHT": [
+        0,
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "S0": [
+        0,
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "Vi": [
+        0,
+        [
+          0,
+          2431.7
+        ]
+      ],
+      "Vo": [
+        0,
+        [
+          0
+        ]
+      ],
+      "Pi": [
+        0,
+        [
+          0,
+          15.454
+        ]
+      ],
+      "Po": [
+        0,
+        [
+          0
+        ]
+      ],
+      "Vd": [
+        0,
+        [
+          0,
+          0.26
+        ]
+      ],
+      "Id": [
+        0,
+        [
+          0,
+          0
+        ]
+      ],
+      "Trem": [
+        0,
+        [
+          0,
+          600
+        ]
+      ],
+      "EqTyp": [
+        0,
+        0
+      ],
+      "EqS": [
+        0,
+        168
+      ],
+      "EqDP": [
+        0,
+        0
+      ],
+      "Et": [
+        0,
+        0
+      ],
+      "EqR": [
+        0,
+        0
+      ]
+    },
+    "metrics": [
+      {
+        "key": "dc.string1.voltage_v",
+        "value": 0.26,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string1.current_a",
+        "value": 0,
+        "unit": "A"
+      },
+      {
+        "key": "dc.string1.fault_raw",
+        "value": 112,
+        "unit": ""
+      },
+      {
+        "key": "dc.string1.vstr_v",
+        "value": 0.26,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string1.idc_a",
+        "value": 0,
+        "unit": "A"
+      },
+      {
+        "key": "dc.string1.temp_c",
+        "value": 0,
+        "unit": "C"
+      },
+      {
+        "key": "dc.string1.remain_ah",
+        "value": 2,
+        "unit": "AH"
+      },
+      {
+        "key": "dc.string1.discharge_ah",
+        "value": 0,
+        "unit": "AH"
+      },
+      {
+        "key": "dc.string1.cell1.voltage_v",
+        "value": 0.094,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string1.cell2.voltage_v",
+        "value": 0.04,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string1.cell3.voltage_v",
+        "value": 0.094,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string1.cell4.voltage_v",
+        "value": 0.04,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.voltage_v",
+        "value": 0.26,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.current_a",
+        "value": 0,
+        "unit": "A"
+      },
+      {
+        "key": "dc.string2.fault_raw",
+        "value": 112,
+        "unit": ""
+      },
+      {
+        "key": "dc.string2.vstr_v",
+        "value": 0.26,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.idc_a",
+        "value": 0,
+        "unit": "A"
+      },
+      {
+        "key": "dc.string2.temp_c",
+        "value": 0,
+        "unit": "C"
+      },
+      {
+        "key": "dc.string2.remain_ah",
+        "value": 100,
+        "unit": "AH"
+      },
+      {
+        "key": "dc.string2.discharge_ah",
+        "value": 0,
+        "unit": "AH"
+      },
+      {
+        "key": "dc.string2.cell1.voltage_v",
+        "value": 0.04,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.cell2.voltage_v",
+        "value": 0.094,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.cell3.voltage_v",
+        "value": 0.04,
+        "unit": "V"
+      },
+      {
+        "key": "dc.string2.cell4.voltage_v",
+        "value": 0.094,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.fault_raw",
+        "value": 32554,
+        "unit": ""
+      },
+      {
+        "key": "ac.sys1.line1.voltage_v",
+        "value": 2431.7,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line1.current_a",
+        "value": 4924.6,
+        "unit": "A"
+      },
+      {
+        "key": "ac.sys1.line2.voltage_v",
+        "value": 4863.5,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line2.current_a",
+        "value": 4530.2,
+        "unit": "A"
+      },
+      {
+        "key": "ac.sys1.line3.voltage_v",
+        "value": 909.7,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line3.current_a",
+        "value": 1005.5,
+        "unit": "A"
+      },
+      {
+        "key": "ac.sys1.line4.voltage_v",
+        "value": 4138.8,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line4.current_a",
+        "value": 1503.1,
+        "unit": "A"
+      },
+      {
+        "key": "ac.sys1.line5.voltage_v",
+        "value": 2627,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line5.current_a",
+        "value": 79.8,
+        "unit": "A"
+      },
+      {
+        "key": "ac.sys1.line6.voltage_v",
+        "value": 4163.1,
+        "unit": "V"
+      },
+      {
+        "key": "ac.sys1.line6.current_a",
+        "value": 73.9,
+        "unit": "A"
+      },
+      {
+        "key": "io.sys1.fault_raw",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "key": "io.sys1.temp1_c",
+        "value": 27.4,
+        "unit": "C"
+      },
+      {
+        "key": "io.sys1.hum1_pct",
+        "value": 54,
+        "unit": "%"
+      },
+      {
+        "key": "sys.rst.ok",
+        "value": 1,
+        "unit": ""
+      },
+      {
+        "key": "sys.dcu.ok",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "key": "sys.acu.ok",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "key": "sys.iou.ok",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "key": "sys.sht.ok",
+        "value": 1,
+        "unit": ""
+      },
+      {
+        "key": "sys.psp.ok",
+        "value": 0,
+        "unit": ""
+      },
+      {
+        "key": "sys.lan.ok",
+        "value": 1,
+        "unit": ""
+      },
+      {
+        "key": "sys.web.ok",
+        "value": 1,
+        "unit": ""
+      }
+    ]
+  }
+}

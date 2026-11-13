@@ -1,0 +1,10 @@
+PGHOST=localhost
+PGPORT=5436
+PGUSER=jconnect
+PGPASSWORD=P@ssword-001
+PGDATABASE=jconnect
+
+ALARM_WORKER_PORT=3004
+LINE_DRIVER_DEBUG=1
+# HTTPS base LINE uses to fetch snapshots (Cloudflare Tunnel)
+PUBLIC_BASE_URL=https://ntsate.ihx.co.th
