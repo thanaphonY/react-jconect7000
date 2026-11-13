@@ -1,2 +1,0 @@
-<?php
-// Telegram driver
