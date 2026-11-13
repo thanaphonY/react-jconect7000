@@ -1,0 +1,621 @@
+// JConnect TimescaleDB / PostgreSQL public schema
+// Relationships come from declared foreign keys.
+
+Table "alarm_log_dispatch" {
+  "id" "integer" [not null, default: `nextval('alarm_log_dispatch_id_seq'::regclass)`]
+  "alarm_log_id" "integer" [not null]
+  "channel_id" "integer" [not null]
+  "status" "character varying(20)" [not null, default: `'queued'::character varying`]
+  "error" "text"
+  "sent_at" "timestamp without time zone"
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+}
+
+Table "alarm_logs" {
+  "id" "integer" [not null, default: `nextval('alarm_logs_id_seq'::regclass)`]
+  "device_id" "integer" [not null]
+  "metric_key" "text" [not null]
+  "message" "text"
+  "severity" "text"
+  "channel" "text"
+  "status" "text" [default: `'queued'::text`]
+  "error" "text"
+  "sent_at" "timestamp without time zone"
+  "created_at" "timestamp with time zone" [default: `CURRENT_TIMESTAMP`]
+  "trigger_type" "character varying(20)"
+  "channels" "text"
+  "duration_minutes" "integer"
+  "trigger_id" "text"
+  "value" "text"
+  "snapshot_path" "text"
+  "snapshot_camera_device_id" "text"
+}
+
+Table "alarm_state" {
+  "device_id" "integer" [not null]
+  "metric_key" "text" [not null]
+  "active" "boolean" [default: `false`]
+  "last_triggered" "timestamp with time zone"
+  "last_cleared" "timestamp with time zone"
+  "message" "text"
+  "severity" "text"
+  "acknowledged" "boolean" [default: `false`]
+  "acknowledged_by" "text"
+  "acknowledged_at" "timestamp without time zone"
+  "acknowledge_note" "text"
+  "trigger_id" "text" [not null]
+
+  indexes {
+    ("device_id", "metric_key", "trigger_id") [pk, name: 'alarm_state_pkey']
+  }
+}
+
+Table "api_client_scopes" {
+  "api_client_id" "integer" [not null]
+  "site_node_id" "integer" [not null]
+
+  indexes {
+    ("api_client_id", "site_node_id") [pk, name: 'api_client_scopes_pkey']
+  }
+}
+
+Table "api_clients" {
+  "id" "integer" [not null, default: `nextval('api_clients_id_seq'::regclass)`]
+  "name" "character varying(200)" [not null]
+  "token_hash" "character varying(64)" [not null]
+  "token_prefix" "character varying(16)" [not null]
+  "site_node_id" "integer"
+  "active" "boolean" [not null, default: `true`]
+  "expires_at" "timestamp with time zone"
+  "rate_limit_per_minute" "integer" [not null, default: `60`]
+  "created_at" "timestamp with time zone" [not null, default: `now()`]
+  "last_used_at" "timestamp with time zone"
+  "created_by" "integer"
+
+  indexes {
+    "id" [pk, name: 'api_clients_pkey']
+    "token_hash" [unique, name: 'api_clients_token_hash_key']
+  }
+}
+
+Table "api_request_counts" {
+  "api_client_id" "integer" [not null]
+  "period" "character varying(10)" [not null]
+  "period_start" "timestamp with time zone" [not null]
+  "request_count" "integer" [not null, default: `0`]
+
+  indexes {
+    ("api_client_id", "period", "period_start") [pk, name: 'api_request_counts_pkey']
+  }
+}
+
+Table "api_request_logs" {
+  "id" "bigint" [not null, default: `nextval('api_request_logs_id_seq'::regclass)`]
+  "created_at" "timestamp with time zone" [not null, default: `now()`]
+  "api_client_id" "integer"
+  "method" "character varying(10)" [not null]
+  "path" "character varying(80)" [not null]
+  "zone_id" "integer"
+  "site_id" "integer"
+  "device_id" "integer"
+  "status_code" "integer" [not null]
+  "error_code" "character varying(40)"
+  "client_ip" "character varying(64)"
+  "meta" "jsonb"
+
+  indexes {
+    "id" [pk, name: 'api_request_logs_pkey']
+  }
+}
+
+Table "dashboard_layout_items" {
+  "id" "integer" [not null, default: `nextval('dashboard_layout_items_id_seq'::regclass)`]
+  "layout_id" "integer"
+  "widget_id" "integer"
+  "x" "integer" [not null]
+  "y" "integer" [not null]
+  "w" "integer" [not null]
+  "h" "integer" [not null]
+  "config" "jsonb"
+  "position_x" "integer"
+  "position_y" "integer"
+  "position" "jsonb"
+}
+
+Table "dashboard_layouts" {
+  "id" "integer" [not null, default: `nextval('dashboard_layouts_id_seq'::regclass)`]
+  "name" "character varying(100)"
+  "background_image" "character varying(255)"
+  "layout" "jsonb" [not null]
+  "is_home" "boolean" [default: `false`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "created_by" "integer"
+  "description" "text"
+  "sort_order" "integer"
+}
+
+Table "device_categories" {
+  "id" "integer" [not null, default: `nextval('device_categories_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "description" "text"
+  "icon" "character varying(50)" [default: `'fa-server'::character varying`]
+  "color" "character varying(20)" [default: `'#007bff'::character varying`]
+  "is_active" "boolean" [default: `true`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "name" [unique, name: 'device_categories_name_key']
+    "id" [pk, name: 'device_categories_pkey']
+  }
+}
+
+Table "device_data" {
+  "id" "bigint" [not null, default: `nextval('device_data_id_seq'::regclass)`]
+  "device_id" "integer" [not null]
+  "key" "text" [not null]
+  "value" "double precision"
+  "timestamp" "timestamp with time zone" [not null, default: `now()`]
+  "value_text" "text"
+  "value_bool" "boolean"
+  "value_json" "jsonb"
+}
+
+Table "device_latest" {
+  "device_id" "integer" [not null]
+  "key" "text" [not null]
+  "value" "double precision"
+  "value_text" "text"
+  "value_bool" "boolean"
+  "value_json" "jsonb"
+  "timestamp" "timestamp with time zone" [not null]
+
+  indexes {
+    ("device_id", "key") [pk, name: 'device_latest_pkey']
+  }
+}
+
+Table "device_maintenance" {
+  "id" "integer" [not null, default: `nextval('device_maintenance_id_seq'::regclass)`]
+  "device_id" "integer" [not null]
+  "maintenance_type" "character varying(50)" [not null]
+  "scheduled_date" "date"
+  "completed_date" "date"
+  "technician" "character varying(100)"
+  "description" "text"
+  "cost" "numeric(10,2)"
+  "status" "character varying(20)" [default: `'scheduled'::character varying`]
+  "priority" "character varying(20)" [default: `'medium'::character varying`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "created_by" "integer"
+
+  indexes {
+    "id" [pk, name: 'device_maintenance_pkey']
+  }
+}
+
+Table "device_templates" {
+  "id" "integer" [not null, default: `nextval('device_templates_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "description" "text"
+  "protocol" "character varying(50)" [not null]
+  "device_information" "jsonb"
+  "communication_config" "jsonb"
+  "metrics" "jsonb" [not null]
+  "default_dashboard_layout" "jsonb"
+  "is_active" "boolean" [default: `true`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "image" "character varying(255)"
+  "category_id" "integer"
+
+  indexes {
+    "id" [pk, name: 'device_templates_pkey']
+  }
+}
+
+Table "devices" {
+  "id" "integer" [not null, default: `nextval('devices_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "device_template_id" "integer" [not null]
+  "serial_number" "character varying(100)"
+  "location" "text"
+  "config" "jsonb"
+  "communication_config" "jsonb"
+  "metrics" "jsonb"
+  "dashboard_layout" "jsonb"
+  "is_active" "boolean" [default: `true`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "description" "text"
+  "is_deleted" "boolean" [default: `false`]
+  "image" "character varying(255)"
+  "created_by" "integer"
+  "category_id" "integer"
+  "site_node_id" "integer"
+
+  indexes {
+    "id" [pk, name: 'devices_pkey']
+  }
+}
+
+Table "event_logs" {
+  "id" "integer" [not null, default: `nextval('event_logs_id_seq'::regclass)`]
+  "user_id" "integer"
+  "action_type" "character varying(50)" [not null]
+  "entity_type" "character varying(50)" [not null]
+  "entity_id" "integer"
+  "message" "text"
+  "created_at" "timestamp with time zone" [default: `CURRENT_TIMESTAMP`]
+  "metadata" "jsonb"
+
+  indexes {
+    "id" [pk, name: 'event_logs_pkey']
+  }
+}
+
+Table "health_check_logs" {
+  "id" "integer" [not null, default: `nextval('health_check_logs_id_seq'::regclass)`]
+  "health_check_id" "integer" [not null]
+  "status" "character varying(20)" [not null]
+  "message" "text" [not null]
+  "channel_results" "jsonb" [not null, default: `'[]'::jsonb`]
+  "sent_at" "timestamp with time zone" [not null, default: `now()`]
+
+  indexes {
+    "id" [pk, name: 'health_check_logs_pkey']
+  }
+}
+
+Table "health_checks" {
+  "id" "integer" [not null, default: `nextval('health_checks_id_seq'::regclass)`]
+  "name" "character varying(200)" [not null]
+  "is_active" "boolean" [not null, default: `true`]
+  "schedule_type" "character varying(20)" [not null, default: `'daily'::character varying`]
+  "schedule_config" "jsonb" [not null, default: `'{"time": "08:00"}'::jsonb`]
+  "timezone" "character varying(64)" [not null, default: `'Asia/Bangkok'::character varying`]
+  "channel_ids" "jsonb" [not null, default: `'[]'::jsonb`]
+  "rooms" "jsonb" [not null, default: `'[]'::jsonb`]
+  "message_template" "text" [not null]
+  "last_run_at" "timestamp with time zone"
+  "next_run_at" "timestamp with time zone"
+  "created_at" "timestamp with time zone" [not null, default: `now()`]
+  "updated_at" "timestamp with time zone" [not null, default: `now()`]
+
+  indexes {
+    "id" [pk, name: 'health_checks_pkey']
+  }
+}
+
+Table "ia_custom_fields" {
+  "ia_custom_fields_id" "integer" [not null, default: `nextval('ia_custom_fields_ia_custom_fields_id_seq'::regclass)`]
+  "rel_crud" "character varying(250)"
+  "name" "character varying(250)"
+  "type" "character varying(250)"
+  "required" "integer"
+  "options" "character varying(250)"
+  "status" "character varying(250)"
+  "show_in_grid" "integer"
+  "create_date" "timestamp without time zone" [not null, default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "ia_custom_fields_id" [pk, name: 'ia_custom_fields_pkey']
+  }
+}
+
+Table "ia_custom_fields_values" {
+  "ia_custom_fields_values_id" "integer" [not null, default: `nextval('ia_custom_fields_values_ia_custom_fields_values_id_seq'::regclass)`]
+  "rel_crud_id" "integer"
+  "cf_id" "integer"
+  "curd" "character varying(250)"
+  "value" "character varying(250)"
+
+  indexes {
+    "ia_custom_fields_values_id" [pk, name: 'ia_custom_fields_values_pkey']
+  }
+}
+
+Table "ia_email_templates" {
+  "id" "integer" [not null, default: `nextval('ia_email_templates_id_seq'::regclass)`]
+  "module" "character varying(255)"
+  "code" "character varying(255)"
+  "template_name" "character varying(255)"
+  "html" "text"
+
+  indexes {
+    "id" [pk, name: 'ia_email_templates_pkey']
+  }
+}
+
+Table "ia_menu" {
+  "id" "integer" [not null, default: `nextval('ia_menu_id_seq'::regclass)`]
+  "menu_name" "character varying(255)"
+  "icon" "character varying(255)"
+  "slug" "character varying(255)"
+  "module_name" "character varying(255)"
+  "status" "integer" [not null, default: `1`]
+  "parent_id" "integer" [not null, default: `0`]
+  "sorting" "character varying(255)"
+
+  indexes {
+    "id" [pk, name: 'ia_menu_pkey']
+  }
+}
+
+Table "ia_permission" {
+  "id" "integer" [not null, default: `nextval('ia_permission_id_seq'::regclass)`]
+  "user_type" "character varying(250)"
+  "data" "text"
+
+  indexes {
+    "id" [pk, name: 'ia_permission_pkey']
+  }
+}
+
+Table "ia_plugins" {
+  "plugins_id" "integer" [not null, default: `nextval('ia_plugins_plugins_id_seq'::regclass)`]
+  "name" "character varying(250)"
+  "db_tables" "character varying(250)"
+  "status" "character varying(250)"
+  "inst_date" "timestamp without time zone" [not null, default: `CURRENT_TIMESTAMP`]
+  "rm_queries" "text"
+  "version" "character varying(250)"
+
+  indexes {
+    "plugins_id" [pk, name: 'ia_plugins_pkey']
+  }
+}
+
+Table "ia_sessions" {
+  "id" "character varying(128)" [not null]
+  "ip_address" "character varying(45)" [not null]
+  "timestamp" "bigint" [not null]
+  "data" "text" [not null]
+
+  indexes {
+    "id" [pk, name: 'ia_sessions_pkey']
+  }
+}
+
+Table "ia_setting" {
+  "id" "integer" [not null, default: `nextval('ia_setting_id_seq'::regclass)`]
+  "keys" "character varying(255)"
+  "value" "character varying(255)"
+
+  indexes {
+    "id" [pk, name: 'ia_setting_pkey']
+  }
+}
+
+Table "ia_users" {
+  "ia_users_id" "integer" [not null, default: `nextval('ia_users_ia_users_id_seq'::regclass)`]
+  "user_id" "character varying(255)"
+  "var_key" "character varying(255)"
+  "status" "character varying(255)"
+  "is_deleted" "character varying(255)"
+  "name" "character varying(255)"
+  "password" "character varying(255)"
+  "email" "character varying(255)"
+  "profile_pic" "character varying(255)"
+  "user_type" "character varying(255)"
+  "create_date" "character varying(255)"
+  "remember_code" "character varying(255)"
+  "access_level" "character varying(20)" [default: `'global'::character varying`]
+
+  indexes {
+    "ia_users_id" [pk, name: 'ia_users_pkey']
+  }
+}
+
+Table "lorawan_applications" {
+  "id" "integer" [not null, default: `nextval('lorawan_applications_id_seq'::regclass)`]
+  "application_id" "uuid" [not null]
+  "name" "character varying(255)" [not null]
+  "description" "text"
+  "tenant_id" "uuid" [not null]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "application_id" [unique, name: 'lorawan_applications_application_id_key']
+    "id" [pk, name: 'lorawan_applications_pkey']
+  }
+}
+
+Table "notification_channel_nodes" {
+  "channel_id" "integer" [not null]
+  "site_node_id" "integer" [not null]
+
+  indexes {
+    ("channel_id", "site_node_id") [pk, name: 'notification_channel_nodes_pkey']
+  }
+}
+
+Table "notification_channels" {
+  "id" "integer" [not null, default: `nextval('notification_channels_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "type" "character varying(50)" [not null]
+  "is_active" "boolean" [default: `true`]
+  "message_template" "text"
+  "description" "text"
+  "config" "jsonb"
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+  "is_deleted" "boolean" [default: `false`]
+
+  indexes {
+    "id" [pk, name: 'notification_channels_pkey']
+  }
+}
+
+Table "report_categories" {
+  "id" "integer" [not null, default: `nextval('report_categories_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "description" "text"
+  "icon" "character varying(100)"
+  "sort_order" "integer" [default: `0`]
+  "is_active" "boolean" [default: `true`]
+  "created_at" "timestamp without time zone" [default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "id" [pk, name: 'report_categories_pkey']
+  }
+}
+
+Table "report_executions" {
+  "id" "integer" [not null, default: `nextval('report_executions_id_seq'::regclass)`]
+  "template_id" "integer"
+  "execution_time" "timestamp without time zone" [default: `now()`]
+  "file_path" "character varying(500)"
+  "status" "character varying(20)" [default: `'success'::character varying`]
+  "error_message" "text"
+  "execution_time_ms" "integer"
+
+  indexes {
+    "id" [pk, name: 'report_executions_pkey']
+  }
+}
+
+Table "report_export_files" {
+  "id" "integer" [not null, default: `nextval('report_export_files_id_seq'::regclass)`]
+  "template_id" "integer" [not null]
+  "schedule_id" "integer"
+  "file_path" "character varying(500)" [not null]
+  "file_name" "character varying(255)" [not null]
+  "file_size" "bigint" [default: `0`]
+  "export_format" "character varying(10)" [not null, default: `'pdf'::character varying`]
+  "exported_at" "timestamp with time zone" [not null, default: `CURRENT_TIMESTAMP`]
+  "exported_by" "integer"
+  "created_at" "timestamp with time zone" [default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "id" [pk, name: 'report_export_files_pkey']
+  }
+}
+
+Table "report_favorites" {
+  "id" "integer" [not null, default: `nextval('report_favorites_id_seq'::regclass)`]
+  "user_id" "integer"
+  "template_id" "integer"
+  "created_at" "timestamp without time zone" [default: `now()`]
+
+  indexes {
+    "id" [pk, name: 'report_favorites_pkey']
+  }
+}
+
+Table "report_schedules" {
+  "id" "integer" [not null, default: `nextval('report_schedules_id_seq'::regclass)`]
+  "template_id" "integer" [not null]
+  "name" "character varying(255)" [not null]
+  "is_active" "boolean" [default: `true`]
+  "schedule_type" "character varying(20)" [not null, default: `'daily'::character varying`]
+  "schedule_config" "jsonb" [default: `'{}'::jsonb`]
+  "timezone" "character varying(50)" [default: `'Asia/Bangkok'::character varying`]
+  "export_format" "character varying(10)" [not null, default: `'pdf'::character varying`]
+  "recipients" "jsonb" [not null, default: `'[]'::jsonb`]
+  "report_params" "jsonb" [default: `'{}'::jsonb`]
+  "last_run_at" "timestamp with time zone"
+  "next_run_at" "timestamp with time zone"
+  "created_by" "integer"
+  "created_at" "timestamp with time zone" [default: `CURRENT_TIMESTAMP`]
+  "updated_at" "timestamp with time zone" [default: `CURRENT_TIMESTAMP`]
+
+  indexes {
+    "id" [pk, name: 'report_schedules_pkey']
+  }
+}
+
+Table "report_templates" {
+  "id" "integer" [not null, default: `nextval('report_templates_id_seq'::regclass)`]
+  "name" "character varying(255)" [not null]
+  "description" "text"
+  "template_type" "character varying(50)" [default: `'prebuilt'::character varying`]
+  "config" "jsonb"
+  "created_by" "integer"
+  "created_at" "timestamp without time zone" [default: `now()`]
+  "updated_at" "timestamp without time zone" [default: `now()`]
+  "html_content" "text" [not null, default: `''::text`]
+  "is_default" "boolean" [default: `false`]
+
+  indexes {
+    "id" [pk, name: 'report_templates_pkey']
+  }
+}
+
+Table "schema_migrations" {
+  "filename" "text" [not null]
+  "applied_at" "timestamp with time zone" [not null, default: `now()`]
+
+  indexes {
+    "filename" [pk, name: 'schema_migrations_pkey']
+  }
+}
+
+Table "site_nodes" {
+  "id" "integer" [not null, default: `nextval('site_nodes_id_seq'::regclass)`]
+  "parent_id" "integer"
+  "name" "character varying(200)" [not null]
+  "node_type" "character varying(20)" [not null]
+  "sort_order" "integer" [not null, default: `0`]
+  "latitude" "double precision"
+  "longitude" "double precision"
+  "dashboard_layout_id" "integer"
+  "created_at" "timestamp with time zone" [not null, default: `now()`]
+  "updated_at" "timestamp with time zone" [not null, default: `now()`]
+
+  indexes {
+    "id" [pk, name: 'site_nodes_pkey']
+  }
+}
+
+Table "user_dashboard_homes" {
+  "user_id" "integer" [not null]
+  "layout_id" "integer" [not null]
+  "updated_at" "timestamp without time zone"
+
+  indexes {
+    "user_id" [pk, name: 'user_dashboard_homes_pkey']
+  }
+}
+
+Table "user_site_scopes" {
+  "ia_users_id" "integer" [not null]
+  "site_node_id" "integer" [not null]
+
+  indexes {
+    ("ia_users_id", "site_node_id") [pk, name: 'user_site_scopes_pkey']
+  }
+}
+
+Table "widgets" {
+  "id" "integer" [not null, default: `nextval('widgets_id_seq'::regclass)`]
+  "name" "character varying(100)" [not null]
+  "widget_type" "character varying(50)" [not null]
+  "config" "jsonb" [not null, default: `'{}'::jsonb`]
+  "created_at" "timestamp without time zone" [default: `now()`]
+  "updated_at" "timestamp without time zone" [default: `now()`]
+
+  indexes {
+    "id" [pk, name: 'widgets_pkey']
+  }
+}
+
+Ref: "api_client_scopes"."api_client_id" > "api_clients"."id" [delete: cascade, update: no action]
+Ref: "api_request_counts"."api_client_id" > "api_clients"."id" [delete: cascade, update: no action]
+Ref: "api_request_logs"."api_client_id" > "api_clients"."id" [delete: set null, update: no action]
+Ref: "device_maintenance"."created_by" > "ia_users"."ia_users_id" [delete: no action, update: no action]
+Ref: "device_maintenance"."device_id" > "devices"."id" [delete: cascade, update: no action]
+Ref: "device_templates"."category_id" > "device_categories"."id" [delete: no action, update: no action]
+Ref: "devices"."category_id" > "device_categories"."id" [delete: no action, update: no action]
+Ref: "devices"."created_by" > "ia_users"."ia_users_id" [delete: no action, update: no action]
+Ref: "devices"."device_template_id" > "device_templates"."id" [delete: cascade, update: no action]
+Ref: "devices"."site_node_id" > "site_nodes"."id" [delete: set null, update: no action]
+Ref: "health_check_logs"."health_check_id" > "health_checks"."id" [delete: cascade, update: no action]
+Ref: "notification_channel_nodes"."channel_id" > "notification_channels"."id" [delete: cascade, update: no action]
+Ref: "report_executions"."template_id" > "report_templates"."id" [delete: no action, update: no action]
+Ref: "report_export_files"."schedule_id" > "report_schedules"."id" [delete: set null, update: no action]
+Ref: "report_favorites"."template_id" > "report_templates"."id" [delete: no action, update: no action]
+Ref: "site_nodes"."parent_id" > "site_nodes"."id" [delete: restrict, update: no action]
+Ref: "user_site_scopes"."ia_users_id" > "ia_users"."ia_users_id" [delete: cascade, update: no action]
